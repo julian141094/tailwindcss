@@ -19,7 +19,7 @@ const index = ( {title, text, click, url } : CardProps ) => {
           {text}
         </span>
         <div className="flex items-center h-full">
-          <img src={url} alt="car" className='z-10 fixed pl-32 pt-8'/>
+          <img src={url} alt="car" className='z-10 absolute pl-32 pt-8'/>
           <div className='w-12 flex items-start justify-start'>
             <Button 
               click={click}

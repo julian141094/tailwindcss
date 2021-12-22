@@ -11,7 +11,7 @@ import { services } from '../../data'
 const index = () => {
   return (
     <div className='py-[94px] flex flex-col justify-center items-center'>
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center px-10">
         <span className='text-[20px] font-nunito text-secondary tracking-[0.24px]'>
           Servicios
         </span>

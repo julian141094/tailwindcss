@@ -1,4 +1,5 @@
 {
+  "homepage":"https://julian141094.github.io/tailwindcss",
   "name": "tailwindcss",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build", 
+    "deploy":"gh-pages -d build", 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build-css": "tailwindcss build src/index.css -o public/index.css",
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.7"
   }
