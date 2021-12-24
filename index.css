@@ -425,54 +425,238 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 *, ::before, ::after{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .absolute{
   position: absolute;
 }
 
-.bottom-10{
-  bottom: 2.5rem;
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-.right-10{
-  right: 2.5rem;
+.top-0{
+  top: 0px;
+}
+
+.bottom-6{
+  bottom: 1.5rem;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mr-\[24px\]{
+  margin-right: 24px;
 }
 
 .flex{
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
+}
+
+.h-\[47px\]{
+  height: 47px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .h-20{
   height: 5rem;
 }
 
+.h-\[44px\]{
+  height: 44px;
+}
+
+.h-\[280px\]{
+  height: 280px;
+}
+
+.min-h-\[47px\]{
+  min-height: 47px;
+}
+
+.min-h-\[570px\]{
+  min-height: 570px;
+}
+
+.min-h-\[113px\]{
+  min-height: 113px;
+}
+
+.min-h-\[105px\]{
+  min-height: 105px;
+}
+
+.w-\[100px\]{
+  width: 100px;
+}
+
+.w-\[195px\]{
+  width: 195px;
+}
+
+.w-\[230px\]{
+  width: 230px;
+}
+
+.w-full{
+  width: 100%;
+}
+
 .w-20{
   width: 5rem;
+}
+
+.w-\[113px\]{
+  width: 113px;
+}
+
+.w-\[298px\]{
+  width: 298px;
+}
+
+.w-\[245px\]{
+  width: 245px;
+}
+
+.w-12{
+  width: 3rem;
+}
+
+.min-w-\[265px\]{
+  min-width: 265px;
+}
+
+.min-w-\[80px\]{
+  min-width: 80px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .flex-col{
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-\[8px\]{
+  border-radius: 8px;
+}
+
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-\[20px\]{
+  border-radius: 20px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-secondary{
+  --tw-border-opacity: 1;
+  border-color: rgb(89 165 227 / var(--tw-border-opacity));
+}
+
+.border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(9 85 144 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-transparent{
+  background-color: transparent;
+}
+
+.bg-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(89 165 227 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -480,8 +664,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-header-background{
+  background-image: url('/public/assets/img/head/bg.png');
+}
+
+.bg-\[right_top\]{
+  background-position: right top;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .p-5{
   padding: 1.25rem;
+}
+
+.p-\[35px\]{
+  padding: 35px;
+}
+
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .py-\[94px\]{
@@ -489,32 +699,144 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 94px;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
+}
+
+.pt-\[200px\]{
+  padding-top: 200px;
+}
+
+.pl-\[112px\]{
+  padding-left: 112px;
+}
+
+.pr-\[20px\]{
+  padding-right: 20px;
+}
+
+.pt-\[65px\]{
+  padding-top: 65px;
+}
+
+.pb-\[145px\]{
+  padding-bottom: 145px;
+}
+
+.pt-\[150px\]{
+  padding-top: 150px;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pr-6{
+  padding-right: 1.5rem;
+}
+
+.pl-32{
+  padding-left: 8rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-nunito{
   font-family: Nunito;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.text-\[48px\]{
+  font-size: 48px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[17px\]{
+  font-size: 17px;
+}
+
+.text-\[32px\]{
+  font-size: 32px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
+}
+
 .text-\[14px\]{
   font-size: 14px;
 }
 
-.font-bold{
-  font-weight: 700;
+.text-\[24px\]{
+  font-size: 24px;
 }
 
 .font-normal{
   font-weight: 400;
 }
 
-.tracking-\[0\.24px\]{
-  letter-spacing: 0.24px;
+.font-bold{
+  font-weight: 700;
 }
 
 .tracking-normal{
   letter-spacing: 0em;
+}
+
+.tracking-\[0\.4px\]{
+  letter-spacing: 0.4px;
+}
+
+.tracking-\[0\.24px\]{
+  letter-spacing: 0.24px;
+}
+
+.text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(9 85 144 / var(--tw-text-opacity));
 }
 
 .text-secondary{
@@ -522,14 +844,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(89 165 227 / var(--tw-text-opacity));
 }
 
-.text-black{
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-primary{
-  --tw-text-opacity: 1;
-  color: rgb(9 85 144 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-lg{
@@ -580,4 +897,52 @@ code {
 
 .group:hover .group-hover\:pl-4{
   padding-left: 1rem;
+}
+
+@media (min-width: 640px){
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px){
+  .md\:grid{
+    display: grid;
+  }
+
+  .md\:h-\[70\%\]{
+    height: 70%;
+  }
+
+  .md\:w-\[70\%\]{
+    width: 70%;
+  }
+
+  .md\:grid-cols-\[265px_100px_100px_100px\]{
+    grid-template-columns: 265px 100px 100px 100px;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:visible{
+    visibility: visible;
+  }
 }
