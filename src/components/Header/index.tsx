@@ -51,7 +51,7 @@ const index = () => {
         <div className="bg-header-background bg-no-repeat bg-[right_top] bg-[55%]  h-full pt-[150px]
           flex justify-center items-center " 
           style={{backgroundSize: '70%'}}>
-          <img src="/assets/img/head/car.png" alt="car" className='md:w-[70%] md:h-[70%]'/>
+          <img src="/assets/img/head/car.png" alt="car TEST NO RENDER" className='md:w-[70%] md:h-[70%]'/>
         </div>
     </div>
   )
