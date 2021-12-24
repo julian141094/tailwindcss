@@ -29,3 +29,35 @@ export const services = [
   },
 ]
 
+export const clientsUrl = [
+  "/assets/img/clients/google@2x.png",
+  "/assets/img/clients/bbb@2x.png",
+  "/assets/img/clients/yelp@2x.png"
+]
+
+export const itemsNav = [ 
+  {
+    text: 'Servicios',
+    state: true,
+  }, 
+  {
+    text: 'Pagos',
+    state: true,
+  }, 
+  {
+    text: 'Oficinas',
+    state: true,
+  }, 
+  {
+    text: 'Blog',
+    state: true,
+  }, 
+  {
+    text: 'Nosotros',
+    state: true,
+  }, 
+  {
+    text: 'Contacto',
+    state: false,
+  }, 
+]

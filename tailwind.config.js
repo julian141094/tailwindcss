@@ -12,6 +12,9 @@ module.exports = {
         primary: '#095590',
         secondary: '#59A5E3',
       },
+      backgroundImage: {
+        'header-background': "url('/public/assets/img/head/bg.png')",
+      }
     },
   },
   plugins: [],

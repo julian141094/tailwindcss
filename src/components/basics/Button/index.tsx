@@ -2,10 +2,11 @@ import { createPublicKey } from 'crypto'
 import React from 'react'
 
 type ButtonProps = {
-  size: string,
+  size?: string,
   type: string,
   click: any,
   text: string,
+  style?: string,
 }
 
 /**
@@ -17,14 +18,32 @@ type ButtonProps = {
  * @param click function 
  * @returns JSX.Component
  */
-const index = ( { size = 'small', type = 'rounded', text = 'Ver más', click } : ButtonProps) => {
+const index = ( { size = 'small', type = 'rounded', text = 'Ver más', click, style = '' } : ButtonProps) => {
   return (
     <button onClick={() => click()} className={`
       ${
         type === 'rounded' ? 
         `bg-transparent
         border 
-        border-secondary` : ''
+        text-[12px]
+        text-secondary
+        border-secondary` :  
+        type === 'rounded primary' ?  `
+        bg-transparent
+        border 
+        text-[16px]
+        text-primary
+        border-primary` : 
+        type === 'backgroud-secondary' ?  `
+        bg-secondary
+        text-[16px]
+        text-white` : 
+        type === 'rounded white' ?  `
+        bg-transparent
+        text-[16px]
+        border
+        border-white
+        text-white` :''
       }
       text-center
       font-nunito
@@ -34,8 +53,8 @@ const index = ( { size = 'small', type = 'rounded', text = 'Ver más', click } :
       tracking-normal
       ${size == 'small' ? 'h-8' : 'h-12' }
       ${size == 'small' ? 'px-0' : 'px-6' }
-      text-[12px]
       z-20
+      ${style}
     `}>
       {text}
     </button>
